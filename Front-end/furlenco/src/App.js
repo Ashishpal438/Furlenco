@@ -16,7 +16,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
         <Route path="/electronics" element={<Electronics />} />
       </Routes>
       {/* <Login />
@@ -24,7 +23,4 @@ function App() {
       {/* <Electronics /> */}
       <Bottom/>
       <Footer/>
-    </div>
-  );
-}
-export default App;
+=======
