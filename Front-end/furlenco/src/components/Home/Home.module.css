@@ -1,0 +1,30 @@
+.productContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+}
+
+.productContainer div {
+    cursor: pointer;
+}
+
+.productContainer :first-child{
+    text-align: right;
+    border-right: 1px solid rgb(201, 201, 201);
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.productContainer :last-child{
+    text-align: left;
+    border-left: 1px solid rgb(201, 201, 201);
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}

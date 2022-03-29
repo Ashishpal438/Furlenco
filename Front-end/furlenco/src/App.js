@@ -1,19 +1,14 @@
 import './App.css';
-import Bottom from './compotent/electronics/Bottom';
-import Electronics from './compotent/electronics/Electronics';
-import Footer from './compotent/electronics/Footer';
-import Login from './compotent/Login/Login';
-import SignUp from './compotent/Login/SignUp';
+import { Navbar } from './components/Navbar/Navbar';
+import {Home} from './components/Home/Home.jsx'
 
 function App() {
   return (
     <div className="App">
-      {/* <Login />
-      <SignUp/> */}
-      <Electronics />
-      <Bottom/>
-      <Footer/>
+         <Navbar/>
+         <Home/>
     </div>
   );
 }
+
 export default App;
