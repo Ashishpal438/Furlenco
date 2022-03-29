@@ -14,7 +14,7 @@ function SignUp() {
         email: email,
         password:password
       };
-      fetch("http://localhost:3000/posts", {
+      fetch("http://localhost:8000/signup", {
         method: "POST",
         body: JSON.stringify(_data),
         headers: { "Content-type": "application/json; charset=UTF-8" },
@@ -53,10 +53,10 @@ function SignUp() {
         />
         <br/>    
       <input
-            className={styled.Login_input}
-            type="password"
-            placeholder='Set Password (Optional)'
-            onChange={(e)=> setPassword(e.currentTarget.value)}
+          className={styled.Login_input}
+          type="password"
+          placeholder='Set Password (Optional)'
+          onChange={(e)=> setPassword(e.currentTarget.value)}
         /> 
         <br/>    
       <input

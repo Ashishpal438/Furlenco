@@ -8,11 +8,11 @@ import SignUp from './compotent/Login/SignUp';
 function App() {
   return (
     <div className="App">
-      {/* <Login />
-      <SignUp/> */}
-      <Electronics />
+      <Login />
+      <SignUp/>
+      {/* <Electronics />
       <Bottom/>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }

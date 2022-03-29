@@ -3,16 +3,18 @@ import styled from './login.module.css'
 // import {Link} from 'react-router-dom'
 
 function Login() {
-  const [loginMail, setLoginMail] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();  
   const Next = () => {
       let _data = {
-        email: loginMail
+        email: email,
+        password:password
       };
-      fetch("http://localhost:3000/posts", {
-        method: "POST",
-        body: JSON.stringify(_data),
-        headers: { "Content-type": "application/json; charset=UTF-8" },
-      })
+    fetch("http://localhost:8000/login", {
+      method: "POST",
+      body: JSON.stringify(_data),
+      headers: { "Content-type": "application/json; charset=UTF-8" },
+    })
       .then((response) => response.json())
       .then((json) => console.log(json))
       .catch((err) => console.log(err));
@@ -23,8 +25,15 @@ function Login() {
             className={styled.Login_input}
             type='text'
             placeholder='Your Email ID or Mobile Number'
-            onChange={(e)=> setLoginMail(e.currentTarget.value)}
+            onChange={(e)=> setEmail(e.currentTarget.value)}
       /> 
+      <br/>
+      <input
+            className={styled.Login_input}
+            type="password"
+            placeholder='Password'
+            onChange={(e)=> setPassword(e.currentTarget.value)}
+        /> 
       <br/>  
       <input
           className={styled.login_btn}
