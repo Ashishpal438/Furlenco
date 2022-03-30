@@ -1,18 +1,23 @@
 import './App.css';
-import Bottom from './compotent/electronics/Bottom';
-import Electronics from './compotent/electronics/Electronics';
-import Footer from './compotent/electronics/Footer';
-import Login from './compotent/Login/Login';
-import SignUp from './compotent/Login/SignUp';
+import { Navbar } from './components/Navbar/Navbar';
+import {Home} from './components/Home/Home.jsx'
+import Login from './components/Login/Login'
+import SignUp from './components/Login/SignUp'
+import Electronics from './components/electronics/Electronics'
+import Bottom from './components/electronics/Bottom'
+import Footer from './components/electronics/Footer'
+
 
 function App() {
   return (
     <div className="App">
       <Login />
-      <SignUp/>
-      {/* <Electronics />
+      <SignUp />
+      <Electronics />
       <Bottom/>
-      <Footer/> */}
+      <Footer/>
+      <Navbar />
+      <Home/> 
     </div>
   );
 }
