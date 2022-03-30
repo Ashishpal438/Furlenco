@@ -5,9 +5,11 @@ import { useState} from 'react'
 import { useContext } from 'react'
 import { DataContext } from '../../Contexts/DataContext'
 import { BuildYourOwn } from './BuildYourOwn'
+import { useNavigate } from 'react-router-dom'
 
 export const Home = () => {
 
+  const navigate = useNavigate()
 
   const { products, collections } = useContext(DataContext)
   const [data, setData] = useState([...products])
@@ -43,7 +45,7 @@ export const Home = () => {
           data.length === 0 ? <div> <BuildYourOwn /> </div> :
             data.map(product => {
               return (
-                <div className={styles.product}>
+                <div className={styles.product} onClick={() => navigate('/item')} >
                   <img src={product.image} alt="product" />
                   <div className={styles.productTitle}>{product.title}</div>
                   {/* display new launch or not */}

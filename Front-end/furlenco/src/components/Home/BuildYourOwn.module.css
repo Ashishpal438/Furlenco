@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .description {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-right: 1px solid #f0f0f09c;
+}
+
+.container .select {
+    display: flex;
+}
+
+.container .select .selectItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.container .imageContainer {
+    background-color: #f0f0f09c;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container .imageContainer img {
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
