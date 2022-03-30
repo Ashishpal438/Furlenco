@@ -2,11 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     border: 1px solid rgb(201, 201, 201);
     font-size: 13px;
     font-weight: 600;
     color: rgb(88, 87, 87);
+}
+
+.productContainer >* {
+    padding: 0 10px;
 }
 
 .productContainer div {
@@ -18,13 +21,76 @@
     border-right: 1px solid rgb(201, 201, 201);
     padding-right: 10px;
     padding-top: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #FFCD32;
+}
+
+
+.productContainer :nth-child(2){
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 6px;
 }
 
 .productContainer :last-child{
     text-align: left;
     border-left: 1px solid rgb(201, 201, 201);
+    border-right: 1px solid rgb(201, 201, 201);
     padding-left: 10px;
     padding-top: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 6px;
+}
+
+
+/* Products row  */
+
+.productRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.productRow .product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95px;
+    height: 90px;
+    border-radius: 5px;
+    margin: 10px;
+    color: #4a84be;
+    cursor: pointer;
+    font-size: 10px;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: rgb(52, 106, 160);
+    text-transform: uppercase;
+    padding: 0px 8px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: rgb(32 32 32 / 20%) 0px 2px 4px 0px;
+    position: relative;
+}
+
+.productRow .product:hover {
+    box-shadow: rgb(32 32 32 / 20%) 0px 2px 4px 0px;
+   /* zoom in */
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.productRow .product .newLaunch {
+    position: absolute;
+    top: -5px;
+    background-color: #FFCD32;
+    clip-path: polygon(4% 0, 100% 0%, 96% 100%, 0% 100%);
+    padding: 2px 3px;
+    color: black;
+    font-size: 8px;
+    letter-spacing: 0;
+    font-style: italic;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
