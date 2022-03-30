@@ -19,7 +19,7 @@ export const BuildYourOwn = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className={styles.icon}>
                 <ArrowForwardIosIcon/>
                 </div>
 
@@ -30,7 +30,7 @@ export const BuildYourOwn = () => {
                     <div>Add soft-furninshings</div>
                 </div>
 
-                <div>
+                <div className={styles.icon}>
                 <ArrowForwardIosIcon/>
                 </div>
 
