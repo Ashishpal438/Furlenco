@@ -1,0 +1,24 @@
+.login_with_fb img{
+   width: 50px;
+   cursor: pointer;
+   margin: 10px;
+}
+.Login_input{
+   border: none;
+   border-bottom: 1px solid black;
+   font-size: 15px;
+   padding: 15px;
+   width: 300px;
+   margin: 20px;
+}
+.login_btn{
+   padding: 8px;
+   width: 15%;
+   color: #ffff;
+   font-weight: bold;
+   font-size: 20px;
+   background-color: rgb(19, 19, 109);
+   border-radius: 20px;
+   border: none;
+}
+
