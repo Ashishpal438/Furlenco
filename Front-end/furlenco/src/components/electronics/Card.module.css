@@ -1,0 +1,91 @@
+.cardContainer {
+  width: 381px;
+  margin: 10px;
+  color: rgb(92, 90, 90);
+  border-radius: 10px;
+}
+.cardContainer:hover {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  width: 381px;
+  padding: 10px;
+}
+.image_main {
+  border-radius: 5px 5px 0px 0px;
+}
+.image_main:hover {
+  border-radius: 0px;
+}
+.notShow {
+  display: none;
+}
+.item_image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin: 5px;
+}
+.item_image_div {
+  display: flex;
+}
+.btn_div {
+  display: flex;
+}
+.btn_div > button {
+  margin-left: 5px;
+  width: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 0%;
+  border: 1px solid rgb(148, 146, 146);
+  color: rgb(92, 90, 90);
+  background-color: white;
+}
+.btn_div > button:hover {
+  background: #346aa0;
+  color: white;
+}
+.itemCount {
+  display: flex;
+  margin-left: 5px;
+}
+.name {
+  display: flex;
+  margin-left: 5px;
+}
+.hours {
+  display: flex;
+  margin-left: 5px;
+}
+.price {
+  color: rgb(128, 133, 133);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px;
+}
+.off {
+  color: rgb(30, 158, 158);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px;
+  background: rgb(228, 248, 248);
+  border: 1px solid #a0b1c2;
+}
+.discounted_price {
+  color: #346aa0;
+  font-weight: bold;
+  border: 1px solid #346aa0;
+  border-radius: 20px;
+  padding: 5px;
+}
+.discounted_price:hover {
+  background: #78b0e7;
+}
+.details {
+  margin-top: 10px;
+}
+.details > span {
+  margin: 10px;
+}
