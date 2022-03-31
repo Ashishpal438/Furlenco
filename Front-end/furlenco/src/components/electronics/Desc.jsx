@@ -1,4 +1,3 @@
-import { ContactsOutlined } from "@ant-design/icons";
 import styles from "./Desc.module.css";
 import React from "react";
 import { useLocation } from "react-router-dom";
