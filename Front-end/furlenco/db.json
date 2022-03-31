@@ -179,6 +179,29 @@
       "off": 60,
       "discounted_price": 920,
       "id": 2
+    },
+    {
+      "name": "Flex Three-Seater Living Room - Lilac",
+      "display": "https://assets.furlenco.com/image/upload/dpr_1.0,f_auto,q_auto/v1/furlenco-images/Bk27ThHS_tablet_desktop___tablet_b.jpg",
+      "basic_img": "https://assets.furlenco.com/image/upload/c_fit,dpr_1.0,f_auto,q_auto,w_360/v1/furlenco-images/Bk27ThHS_mobile_mobile_b.jpg",
+      "value_img": "https://assets.furlenco.com/image/upload/c_fit,dpr_1.0,f_auto,q_auto,w_360/v1/furlenco-images/TBvOUnYC_mobile_mobile_v.jpg",
+      "prime_img": "https://assets.furlenco.com/image/upload/c_fit,dpr_1.0,f_auto,q_auto,w_360/v1/furlenco-images/7rP1QwaV_mobile_mobile_p__1_.jpg",
+      "basic_item": [
+        "https://d24xw9xsv7y3uu.cloudfront.net/new-uploads/production/items/1175/mobile/lUOzP3bt___FUR4100.jpg"
+      ],
+      "value_item": [
+        "https://d26iwjla857pn6.cloudfront.net/uploads/production/furniture_item/677/1440w_75c7d5ec.jpg",
+        "https://d24xw9xsv7y3uu.cloudfront.net/new-uploads/production/items/1175/mobile/lUOzP3bt___FUR4100.jpg"
+      ],
+      "prime_item": [
+        "https://d26iwjla857pn6.cloudfront.net/uploads/production/furniture_item/1070/1440w_a2c1c150.jpg",
+        "https://d26iwjla857pn6.cloudfront.net/uploads/production/furniture_item/677/1440w_75c7d5ec.jpg",
+        "https://d24xw9xsv7y3uu.cloudfront.net/new-uploads/production/items/1175/mobile/lUOzP3bt___FUR4100.jpg"
+      ],
+      "price": 2149,
+      "off": 60,
+      "discounted_price": 860,
+      "id": 3
     }
   ]
 }
