@@ -1,11 +1,115 @@
 .container {
   display: grid;
   grid-template-columns: 70% 30%;
-
+  background: rgb(243, 245, 250);
   padding: 10px;
+  color: gray;
 }
-.container > div {
+.rightDiv {
+  background: white;
+}
+.devide {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.formContainer {
+  text-align: center;
+  background: white;
+  width: 97%;
+  height: 350px;
+  margin-left: 10px;
+  margin-top: 20px;
+  position: sticky;
+  top: 0px;
 }
 .display_img {
   width: 100%;
+}
+.name {
+  font-weight: 500;
+  color: black;
+  margin-top: 20px;
+}
+.name_ {
+  color: black;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.boxImage {
+  width: 30%;
+  margin: 10px;
+  border: 1px solid rgb(218, 216, 216);
+}
+.name__ {
+  color: black;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.desc {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.monthlyrent {
+  color: gray;
+  font-size: 17px;
+  margin-top: 10px;
+}
+.price {
+  font-size: 17px;
+  color: gray;
+}
+.price_ {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.month {
+  color: gray;
+}
+.save {
+  margin-left: 5px;
+  color: rgb(16, 224, 16);
+  font-weight: 400;
+}
+.hours {
+  color: black;
+}
+.addtocart {
+  background-color: #346aa0;
+  width: 70%;
+  margin-left: 15%;
+  padding: 3px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  margin-top: 25px;
+}
+.addtocart:hover {
+  cursor: pointer;
+}
+.selectApplication {
+  margin-top: 10px;
+  width: 70%;
+  margin-left: 15%;
+  color: #346aa0;
+  padding: 3px;
+  border-radius: 20px;
+  border: 1px solid #346aa0;
+  margin-top: 15px;
+}
+.selectApplication:hover {
+  background: #346aa0;
+  color: white;
+}
+.needHelp {
+  color: #346aa0;
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 8px;
 }

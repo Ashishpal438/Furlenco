@@ -27,7 +27,7 @@
   font-size: inherit;
   font-weight: inherit;
   color: white;
-  background-color: #346BA1;
+  background-color: #346ba1;
   border-radius: 10px;
   cursor: pointer;
   margin-left: 8px;
@@ -56,29 +56,27 @@
 }
 
 .nav_container .handleSearch {
-    border: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 45%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 45%;
 }
 
-.nav_container .handleSearch  :last-child {
-    color: #80A2C5;
+.nav_container .handleSearch :last-child {
+  color: #80a2c5;
 }
 
 .nav_container .handleSearch input {
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 8px;
-    font-size: 13px;
-    color: #878788;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  font-size: 13px;
+  color: #878788;
 }
-
-
 
 .nav_container .right {
   display: grid;
@@ -110,4 +108,17 @@
 
 .nav_container .right .location img {
   height: 22px;
+}
+.cartNumber {
+  background-color: #346ba1;
+  width: 20px;
+  text-align: center;
+  font-size: 11px;
+  border-radius: 40px;
+  color: white;
+  font-weight: 700;
+  z-index: 10;
+  position: relative;
+  left: -5px;
+  top: -6px;
 }
