@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: rgb(243, 245, 250);
+  padding: 40px;
+}
+.payDetails {
+  background: white;
+}
+.form {
+  background: white;
+}
+.payslip {
+  display: grid;
+  grid-template-columns: 60% 30% 10%;
+}
