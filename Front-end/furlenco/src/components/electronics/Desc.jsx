@@ -23,10 +23,6 @@ export const Desc = () => {
   return (
     <div className={styles.container}>
       <div>
-<<<<<<< HEAD
-        <img className={styles.display_img} src={ob.display} alt = 'dis' />
-        <div>{ob.name}</div>
-=======
         <div className={styles.rightDiv}>
           <img className={styles.display_img} src={ob.display} />
           <div className={styles.devide}>
@@ -48,7 +44,6 @@ export const Desc = () => {
             </div>
           </div>
         </div>
->>>>>>> fa3c0b6384e5366436a88ff86b7a9bc1406d3113
       </div>
       <div className={styles.sidebar}>
         <div className={styles.formContainer}>
