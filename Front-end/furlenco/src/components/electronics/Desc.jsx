@@ -1,4 +1,3 @@
-import { ContactsOutlined } from "@ant-design/icons";
 import styles from "./Desc.module.css";
 import React from "react";
 import { useLocation } from "react-router-dom";
@@ -9,7 +8,7 @@ export const Desc = () => {
   return (
     <div className={styles.container}>
       <div>
-        <img className={styles.display_img} src={ob.display} />
+        <img className={styles.display_img} src={ob.display} alt = 'dis' />
         <div>{ob.name}</div>
       </div>
       <div>
