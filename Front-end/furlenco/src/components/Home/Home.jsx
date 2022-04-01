@@ -8,6 +8,7 @@ import { BuildYourOwn } from './BuildYourOwn'
 import { useNavigate } from 'react-router-dom'
 import { AwesomeFurniture } from './Awesome/AwesomeFurniture'
 import { Link } from 'react-router-dom'
+import { Review } from './Reviews/Review'
 
 export const Home = () => {
 
@@ -98,6 +99,9 @@ export const Home = () => {
 
 
       <AwesomeFurniture />
+
+      <Review/>
+
     </>
   )
 }

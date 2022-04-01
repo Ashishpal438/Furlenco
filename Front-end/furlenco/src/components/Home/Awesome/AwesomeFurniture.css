@@ -1,5 +1,6 @@
 .awesomeContainer {
     margin-top: 50px;
+    padding-bottom: 20px;
 }
 
 .awesomeContainer .title {
@@ -73,7 +74,7 @@
     margin: auto;
     /* background-color: rgb(9, 155, 28); */
     padding-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     display: grid;
     gap: 20px;
     grid-template-columns: 5fr 2fr;
