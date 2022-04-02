@@ -80,7 +80,7 @@ function Login({ setIsModalVisible }) {
         }}
       />
       <br />
-      <p>Login using</p>
+      <b>Login using</b>
       <div className={styled.login_with_fb}>
         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png' alt='fb_login' />
         <img src='https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-icon-logo-png-transparent-svg-vector-bie-supply-14.png' alt='google_login' />
@@ -92,7 +92,7 @@ function Login({ setIsModalVisible }) {
         showModal();
         setIsModalVisible(false)
       }}>Sign-up</button>
-      <Modal  visible={isModalVisible} onOk={handleOk} 
+      <Modal  visible={isModalVisible} width={400} onOk={handleOk} 
        onCancel={handleCancel}
        footer={null}
        title={null}

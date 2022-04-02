@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import styles from "./Navbar.module.css";
 import cx from "classnames";
@@ -91,7 +91,11 @@ export const Navbar = () => {
 
           {/* modal */}
 
+          <Modal visible={isModalVisible} width={400} onOk={handleOk} onCancel={handleCancel} footer={null}>
+
+
           <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} footer={null}>
+
 
             <Login setIsModalVisible={setIsModalVisible} />
           </Modal>
