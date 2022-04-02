@@ -92,7 +92,12 @@ function Login({ setIsModalVisible }) {
         showModal();
         setIsModalVisible(false)
       }}>Sign-up</button>
-      <Modal  visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+      <Modal  visible={isModalVisible} onOk={handleOk} 
+       onCancel={handleCancel}
+       footer={null}
+       title={null}
+       height={600}
+       >
         <SignUp setIsModalVisible2={setIsModalVisible2} />
       </Modal>
     </div>

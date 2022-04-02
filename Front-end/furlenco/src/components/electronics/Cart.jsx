@@ -14,6 +14,7 @@ export const Cart = () => {
   const openPayment = () => {
     setShow(!show);
   };
+
   return (
     <div>
       <div className={styles.container}>
