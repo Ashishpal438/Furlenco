@@ -1,96 +1,195 @@
 .productContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(201, 201, 201);
-    font-size: 13px;
-    font-weight: 600;
-    color: rgb(88, 87, 87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(201, 201, 201);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(88, 87, 87);
 }
 
-.productContainer >* {
-    padding: 0 10px;
+.productContainer > * {
+  padding: 0 10px;
 }
 
 .productContainer div {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.productContainer :first-child{
-    text-align: right;
-    border-right: 1px solid rgb(201, 201, 201);
-    padding-right: 10px;
-    padding-top: 7px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid #FFCD32;
+.productContainer :first-child {
+  text-align: right;
+  border-right: 1px solid rgb(201, 201, 201);
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #ffcd32;
 }
 
-
-.productContainer :nth-child(2){
-    text-align: center;
-    padding-top: 7px;
-    padding-bottom: 6px;
+.productContainer :nth-child(2) {
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 6px;
 }
 
-.productContainer :last-child{
-    text-align: left;
-    border-left: 1px solid rgb(201, 201, 201);
-    border-right: 1px solid rgb(201, 201, 201);
-    padding-left: 10px;
-    padding-top: 7px;
-    padding-bottom: 6px;
+.productContainer :last-child {
+  text-align: left;
+  border-left: 1px solid rgb(201, 201, 201);
+  border-right: 1px solid rgb(201, 201, 201);
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 6px;
 }
-
 
 /* Products row  */
 
-.productRow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.productRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .productRow .product {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 95px;
-    height: 90px;
-    border-radius: 5px;
-    margin: 10px;
-    color: #4a84be;
-    cursor: pointer;
-    font-size: 10px;
-    line-height: normal;
-    letter-spacing: 1px;
-    color: rgb(52, 106, 160);
-    text-transform: uppercase;
-    padding: 0px 8px;
-    text-align: center;
-    font-weight: 600;
-    box-shadow: rgb(32 32 32 / 20%) 0px 2px 4px 0px;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95px;
+  height: 90px;
+  border-radius: 5px;
+  margin: 10px;
+  color: #4a84be;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: rgb(52, 106, 160);
+  text-transform: uppercase;
+  padding: 0px 8px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: rgb(32 32 32 / 20%) 0px 2px 4px 0px;
+  position: relative;
 }
 
 .productRow .product:hover {
-    box-shadow: rgb(32 32 32 / 20%) 0px 2px 4px 0px;
-   /* zoom in */
-    transform: scale(1.1);
-    transition: all 0.1s ease-in-out;
+  box-shadow: rgb(32 32 32 / 20%) 0px 2px 4px 0px;
+  /* zoom in */
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
 }
 
 .productRow .product .newLaunch {
-    position: absolute;
-    top: -5px;
-    background-color: #FFCD32;
-    clip-path: polygon(4% 0, 100% 0%, 96% 100%, 0% 100%);
-    padding: 2px 3px;
-    color: black;
-    font-size: 8px;
-    letter-spacing: 0;
-    font-style: italic;
-    border-top-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+  position: absolute;
+  top: -5px;
+  background-color: #ffcd32;
+  clip-path: polygon(4% 0, 100% 0%, 96% 100%, 0% 100%);
+  padding: 2px 3px;
+  color: black;
+  font-size: 8px;
+  letter-spacing: 0;
+  font-style: italic;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Banner css */
+
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bannerContainer span {
+  padding-bottom: 16px;
+  padding-top: 24px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.bannerContainer img {
+  width: 1130px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+/* rent */
+
+.rentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 83%;
+  margin: auto;
+}
+
+.rentContainer span {
+  margin-top: 54px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 6px;
+}
+
+.rentContainer .cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.rentContainer .cardContainer div {
+  box-shadow: 0 2px 4px 0 rgb(194 194 194 / 50%);
+  border-radius: 5px;
+  height: 500px;
+  position: relative;
+}
+
+.rentContainer .cardContainer img {
+  width: 355px;
+  height: 250px;
+}
+
+.rentContainer .cardContainer h2 {
+  margin: 0;
+  padding: 0;
+  padding: 26px 50px 20px 35px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.rentContainer .cardContainer p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  padding-bottom: 24px;
+  padding-left: 34px;
+  padding-right: 40px;
+}
+
+.rentContainer .cardContainer a {
+  color: #346aa0;
+  cursor: pointer;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
 }
