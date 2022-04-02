@@ -93,8 +93,8 @@ export const Navbar = () => {
 
           <Modal visible={isModalVisible} width={400} onOk={handleOk} onCancel={handleCancel} footer={null}>
 
-
-          <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} footer={null}>
+{/* 
+          <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} footer={null}> */}
 
 
             <Login setIsModalVisible={setIsModalVisible} />
