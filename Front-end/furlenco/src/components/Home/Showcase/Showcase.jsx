@@ -4,7 +4,7 @@ import { Carousel } from "antd";
 import styles from './Showcase.module.css';
 
 const contentStyle = {
-  height: "340px",
+  height: "337px",
   width: "100%",
 };
 

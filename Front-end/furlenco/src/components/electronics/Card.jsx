@@ -38,7 +38,7 @@ export const Card = ({ ob }) => {
           <button onMouseEnter={handleItem.bind(this, "prime")}>Prime</button>
         </div>
         <div className={styles.itemCount}>
-          {ob[itemsList].length} {ob[itemsList].length == 1 ? "item" : "items"}
+          {ob[itemsList].length} {ob[itemsList].length === 1 ? "item" : "items"}
         </div>
         <div className={styles.item_image_div}>
           {ob[itemsList].map((ele) => (

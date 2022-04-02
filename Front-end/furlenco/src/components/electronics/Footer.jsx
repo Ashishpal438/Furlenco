@@ -1,19 +1,21 @@
 import React from 'react'
+import Bottom from './Bottom'
 import Content from './Content'
 import styled from './electronics.module.css'
 
 function Footer() {
   return (
-    <div>
+    <div className={styled.footer_page_}>
+        <Bottom/>      
         <div className={styled.footer}> 
-            <div>
+            <div className={styled.footer_border}>
                 <p>NEED HELP?</p> 
                 <div className={styled.footer_help}>
                     <p>Help Centre</p>
                     <p>Chat with us</p>
                 </div>    
             </div> 
-            <div>
+            <div className={styled.footer_border}>
                 <p>EXPERIENCE OUR APP ON MOBILE</p>
                 <div className={styled.footer_help}>
                     <img src='https://assets.furlenco.com/s3-furlenco-images/optimus/footer/ic-google-play-hover.svg' alt='app_address' />
@@ -34,8 +36,8 @@ function Footer() {
         <Content/>  
         <div className={styled.copy_write_section} >
           <img src='https://assets.furlenco.com/s3-furlenco-images/optimus/footer/footer-illustration.svg' alt='footer' />
-          <p>Copyright © 2022 Kieraya Furnishing Solutions Pvt. Ltd.</p>
         </div> 
+        <p>Copyright © 2022 Kieraya Furnishing Solutions Pvt. Ltd.</p>  
     </div>
   )
 }
