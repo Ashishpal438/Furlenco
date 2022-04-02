@@ -1,16 +1,55 @@
 .container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   background: rgb(243, 245, 250);
   padding: 40px;
 }
 .payDetails {
   background: white;
+  padding: 30px;
+}
+.Odetaisl {
+  font-size: 15px;
+  font-weight: 600;
 }
 .form {
   background: white;
 }
 .payslip {
   display: grid;
-  grid-template-columns: 60% 30% 10%;
+  grid-template-columns: 40% 10% 10%;
+  border-bottom: 1px solid rgb(226, 224, 224);
+  padding: 10px;
+  color: gray;
+  font-weight: 450;
 }
+.payslip_ {
+  display: grid;
+  grid-template-columns: 40% 10% 10%;
+  border-top: 1px solid rgb(34, 33, 33);
+  padding: 10px;
+  font-weight: 500;
+}
+.del {
+  color: rgb(241, 82, 82);
+  text-align: center;
+  font-size: 14px;
+
+  border-radius: 50%;
+
+  font-weight: 800;
+}
+.continue {
+  border: none;
+  background: #346ba1;
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 40px;
+}
+/* .payment {
+  display: grid;
+  grid-template-columns: 40% 60%;
+} */

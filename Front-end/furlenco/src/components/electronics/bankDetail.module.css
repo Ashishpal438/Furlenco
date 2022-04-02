@@ -1,0 +1,220 @@
+.bggray {
+  height: 100vh;
+  z-index: 0;
+}
+.bankTop {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  background-color: #fff;
+}
+.orderMain {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.orderSummary {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #333;
+  padding-right: 20%;
+}
+.orderNumberText {
+  color: #666;
+  font-size: 13px;
+}
+.orderNum {
+  font-weight: bold;
+  color: #333;
+}
+.orderLine {
+  font-size: 25px;
+  color: rgb(223, 219, 219);
+  padding-right: 5%;
+}
+
+.bankMain {
+  display: flex;
+  width: 60%;
+  margin: auto;
+}
+
+.debitupileft {
+  background-color: #fbfbfb;
+  height: 500px;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.debitText {
+  color: rgb(129, 124, 124);
+  font-size: 17px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upiText {
+  color: rgb(129, 124, 124);
+  font-size: 17px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+/* .debitText:hover {
+	color: #333;
+	border-left: 5px solid #346ba1;
+	height: fit-content;
+	background-color: #fff;
+	padding-bottom: 20px;
+} */
+
+.debitTexthover {
+  padding-top: 20px;
+  padding-left: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  border-left: 5px solid #346ba1;
+  height: fit-content;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+.upiTextHover {
+  padding-top: 20px;
+  padding-left: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  border-left: 5px solid #346ba1;
+  height: fit-content;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+/* .upiText:hover {
+	color: #333;
+	border-left: 5px solid #346ba1;
+	height: fit-content;
+	background-color: #fff;
+	padding-bottom: 20px;
+} */
+.enterMainDebit {
+  /* width: 150%; */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2.6px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.enterCredit {
+  /* border: 1px solid black; */
+  padding: 20px;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.cardNumber {
+  color: #999999;
+  font-size: 13px;
+  padding-left: 30px;
+  padding-top: 30px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.cardInput {
+  padding: 15px 20px;
+  width: 300px;
+  font-size: 18px;
+  border: 1px solid #346ba1;
+  border-radius: 10px;
+  outline: 1px solid #346ba1;
+}
+
+.ecMain {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.expries {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.mmyy {
+  padding: 10px 20px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #346ba1;
+  outline: 1px solid #346ba1;
+}
+
+.securely {
+  color: #666;
+  font-size: 12px;
+}
+
+.btnPay {
+  background-color: #346ba1;
+  border: 0;
+  border-radius: 15px;
+  width: 250px;
+  padding: 15px 40px;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.upiTextMain {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2.6px;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  color: #333;
+}
+
+.upiIdVpa {
+  color: #999;
+  font-size: 13px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.upiInput {
+  padding: 15px 20px;
+  margin-left: 30px;
+  margin-top: 5px;
+  width: 250px;
+  font-size: 13px;
+  border: 1px solid #346ba1;
+  outline: 1px solid #346ba1;
+
+  border-radius: 10px;
+}
+
+.collectReq {
+  color: #999;
+  font-size: 12px;
+  padding-left: 30px;
+  margin-top: 5px;
+}

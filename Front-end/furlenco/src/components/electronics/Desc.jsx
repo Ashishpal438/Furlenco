@@ -1,24 +1,17 @@
 import styles from "./Desc.module.css";
-import React from "react";
-import { useLocation } from "react-router-dom";
-
+import React, { useContext } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../../store/cart-slice";
 export const Desc = () => {
   const location = useLocation();
   const ob = location.state;
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const handleAddCart = () => {
-    console.log("added");
-    const { id, ...others } = { ...ob };
-    // console.log(others);
-    fetch(`http://localhost:8000/cart`, {
-      method: "POST",
-      body: JSON.stringify(others),
-      headers: { "content-type": "application/json;charset=UTF-8" },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log("done");
-      })
-      .catch((err) => console.log(err));
+    console.log("dispatched");
+    dispatch(cartActions.addItemToCart(ob));
+    navigate("/");
   };
   return (
     <div className={styles.container}>

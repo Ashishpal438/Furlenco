@@ -34,7 +34,7 @@ function SignUp({ setIsModalVisible2 }) {
         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png' alt='fb_login' />
         <img src='https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-icon-logo-png-transparent-svg-vector-bie-supply-14.png' alt='google_login' />
       </div>
-      <p>or</p>
+      <p style={{margin:'0px', padding:'0px'}}>or</p>
       <input
         className={styled.Login_input}
         type='text'

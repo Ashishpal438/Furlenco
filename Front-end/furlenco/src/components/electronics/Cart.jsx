@@ -1,29 +1,52 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styles from "./Cart.module.css";
+import { cartActions } from "../../store/cart-slice";
+import { BankDetail } from "./BankDetail";
 export const Cart = () => {
-  const [cart, setCart] = useState([]);
-  useEffect(() => {
-    fetch(`http://localhost:8000/cart`)
-      .then((r) => r.json())
-      .then((d) => setCart([...d]))
-      .catch((e) => console.log(e));
-  }, []);
+  const cart = useSelector((state) => state.cart);
+  console.log(cart);
+  const dispatch = useDispatch();
+  const handleremove = (id_) => {
+    dispatch(cartActions.removeItem(id_));
+  };
+  const [show, setShow] = useState(false);
+  const openPayment = () => {
+    setShow(!show);
+  };
+
   return (
-    <div className={styles.container}>
-      <div className={styles.form}>Enter Your Details</div>
-      <div className={styles.payDetails}>
-        <div>Order Details</div>
-        {cart.map((e) => (
-          <div className={styles.payslip}>
-            <img src={e.basic_img} />
-            <div>{e.name}</div>
-            <div>
-              ₹{e.discounted_price}/mo x{e.quantity}
+    <div>
+      <div className={styles.container}>
+        <div className={styles.payDetails}>
+          <div className={styles.Odetaisl}>Order Details</div>
+          {cart.items.map((e) => (
+            <div className={styles.payslip}>
+              <div>{e.name}</div>
+              <div>₹{e.discounted_price}/mo</div>
+              <div onClick={handleremove} className={styles.del}>
+                cancel
+              </div>
             </div>
-            <div>-</div>
+          ))}
+          <div className={styles.payslip_}>
+            <div>Total monthly rent</div>
+            <div>
+              ₹{cart.items.reduce((acc, e) => acc + e.discounted_price, 0)}/-
+            </div>
           </div>
-        ))}
+          <button className={styles.continue} onClick={openPayment}>
+            Continue
+          </button>
+        </div>
       </div>
+      {show && (
+        <div className={styles.payment}>
+          <BankDetail
+            total={cart.items.reduce((acc, e) => acc + e.discounted_price, 0)}
+          />
+        </div>
+      )}
     </div>
   );
 };

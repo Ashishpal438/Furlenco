@@ -8,6 +8,7 @@ import Login from "../Login/Login";
 
 export const Navbar = () => {
   const navigate = useNavigate();
+
   const [cart, setCart] = useState([]);
   useEffect(() => {
     fetch(`http://localhost:8000/cart`)
@@ -81,7 +82,7 @@ export const Navbar = () => {
           </div>
 
           {/* modal */}
-          <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+          <Modal visible={isModalVisible} width={400} onOk={handleOk} onCancel={handleCancel} footer={null}>
             <Login setIsModalVisible={setIsModalVisible} />
           </Modal>
 
@@ -95,9 +96,15 @@ export const Navbar = () => {
               src="https://assets.furlenco.com/s3-furlenco-images/desktop_web/hulk/icons/ic-cart.svg"
               alt="img"
             />
+
+            {/* {cart[0].items.length != 0 && (
+              <div className={styles.cartNumber}>{cart[0].items.length}</div>
+            )} */}
+
             {cart.length !== 0 && (
               <div className={styles.cartNumber}>{cart.length}</div>
             )}
+
           </div>
 
           <div className={cx(styles.nav_item, styles.location)}>

@@ -13,8 +13,8 @@ const cartSlice = createSlice({
     addItemToCart(state, action) {
       const newItem = action.payload;
       state.items.push(newItem);
+      console.log(newItem);
       state.changed = true;
-
     },
     removeItem(state, action) {
       const index = state.items.findIndex((ele) => ele.id === action.payload);
