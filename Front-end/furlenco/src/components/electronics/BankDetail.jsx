@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 export const BankDetail = (props) => {
-  let data = JSON.parse(localStorage.getItem("membership"));
+  //let data = JSON.parse(localStorage.getItem("membership"));
   const [debit, setDebit] = useState(true);
   const [upi, setUpi] = useState(false);
   const navigate = useNavigate();
@@ -66,8 +66,8 @@ export const BankDetail = (props) => {
       alert("Payment Failed!");
     }
   };
-  var rupee = data.rupees;
-  var rupees = parseInt(rupee);
+  // var rupee = data.rupees;
+  // var rupees = parseInt(rupee);
 
   var sub = localStorage.getItem("promo");
   var subtract = parseInt(sub);

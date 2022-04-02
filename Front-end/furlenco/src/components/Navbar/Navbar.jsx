@@ -3,20 +3,32 @@ import SearchIcon from "@mui/icons-material/Search";
 import styles from "./Navbar.module.css";
 import cx from "classnames";
 import { useNavigate } from "react-router-dom";
-import { Modal } from 'antd';
+import { Modal } from "antd";
 import Login from "../Login/Login";
-
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCartData, sendCartData } from "../../store/cart-action";
 export const Navbar = () => {
   const navigate = useNavigate();
-
-  const [cart, setCart] = useState([]);
+  // const cart_ = useSelector((state) => state.cart);
+  // const [cart, setCart] = useState({});
+  // useEffect(() => {
+  //   fetch(`http://localhost:8000/cart`)
+  //     .then((r) => r.json())
+  //     .then((d) => {
+  //       console.log(d[0]);
+  //       setCart({ ...d[0] });
+  //     })
+  //     .catch((e) => console.log(e));
+  // }, [cart_]);
+  const cart = useSelector((state) => state.cart);
+  console.log(cart);
+  const dispatch = useDispatch();
   useEffect(() => {
-    fetch(`http://localhost:8000/cart`)
-      .then((r) => r.json())
-      .then((d) => setCart([...d]))
-      .catch((e) => console.log(e));
-  }, []);
-
+    dispatch(fetchCartData());
+  }, [dispatch]);
+  useEffect(() => {
+    if (cart.changed) dispatch(sendCartData(cart));
+  }, [cart, dispatch]);
 
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -31,9 +43,6 @@ export const Navbar = () => {
   const handleCancel = () => {
     setIsModalVisible(false);
   };
-
-
-
 
   return (
     <>
@@ -72,7 +81,6 @@ export const Navbar = () => {
               src="https://assets.furlenco.com/s3-furlenco-images/lenco-icons/static-icons/ic_offer_rounded.svg"
               alt="img"
             />
-            
           </div>
           <div className={styles.nav_item} onClick={showModal}>
             <img
@@ -82,7 +90,12 @@ export const Navbar = () => {
           </div>
 
           {/* modal */}
-          <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+          <Modal
+            title="Basic Modal"
+            visible={isModalVisible}
+            onOk={handleOk}
+            onCancel={handleCancel}
+          >
             <Login setIsModalVisible={setIsModalVisible} />
           </Modal>
 
@@ -97,14 +110,9 @@ export const Navbar = () => {
               alt="img"
             />
 
-            {/* {cart[0].items.length != 0 && (
-              <div className={styles.cartNumber}>{cart[0].items.length}</div>
-            )} */}
-
-            {cart.length !== 0 && (
-              <div className={styles.cartNumber}>{cart.length}</div>
+            {cart.items && (
+              <div className={styles.cartNumber}>{cart.items.length}</div>
             )}
-
           </div>
 
           <div className={cx(styles.nav_item, styles.location)}>
