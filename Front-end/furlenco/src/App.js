@@ -6,9 +6,11 @@ import { Route, Routes } from "react-router-dom";
 import { Desc } from "./components/electronics/Desc";
 import Footer from "./components/electronics/Footer";
 import { Cart } from "./components/electronics/Cart";
+
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchCartData, sendCartData } from "./store/cart-action";
+
 function App() {
   const cart = useSelector((state) => state.cart);
   console.log(cart);

@@ -3,11 +3,12 @@ import styled from './login.module.css'
 // import {Link} from 'react-router-dom'
 import SignUp from './SignUp'
 import { Modal } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 function Login({ setIsModalVisible }) {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-
+  const navigate = useNavigate();
   function warning() {
     Modal.warning({
       title: 'This is a warning message',
@@ -20,7 +21,7 @@ function Login({ setIsModalVisible }) {
       email: email,
       password: password
     };
-    fetch("http://localhost:8000/login", {
+    fetch("http://localhost:9000/login", {
       method: "POST",
       body: JSON.stringify(_data),
       headers: { "Content-type": "application/json; charset=UTF-8" },
@@ -52,7 +53,7 @@ function Login({ setIsModalVisible }) {
 
 
   return (
-    <div>
+    <div className={styled.login_page_box}>
       <input
         className={styled.Login_input}
         type='text'
@@ -73,6 +74,7 @@ function Login({ setIsModalVisible }) {
         value='Next'
         onClick={() => {
           Next();
+          navigate('/')
           setEmail('');
           setPassword('');
         }}
@@ -85,15 +87,16 @@ function Login({ setIsModalVisible }) {
       </div>
       <p>New User?</p>
       <p>Sign-up to enjoy 40% faster checkout</p>
-      {/* <Link to=''>Sign-up</Link> */}
-      <button onClick={() => {
+
+      <button className={styled.Login_btn_page} onClick={() => {
         showModal();
         setIsModalVisible(false)
       }}>Sign-up</button>
-      <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+      <Modal  visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
         <SignUp setIsModalVisible2={setIsModalVisible2} />
       </Modal>
     </div>
   )
 }
-export default Login
+export default Login 
+

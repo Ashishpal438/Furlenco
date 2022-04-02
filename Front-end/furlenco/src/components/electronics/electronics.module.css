@@ -8,10 +8,10 @@
   width: 100%;
 }
 .item_nav_wrapper {
-  border: 1px outset;
+  border: outset;
   height: 100px;
   position: sticky;
-  top: 0px;
+  top: 50px;
   width: 100%;
   text-align: center;
   background-color: #fff;
