@@ -90,12 +90,9 @@ export const Navbar = () => {
           </div>
 
           {/* modal */}
-          <Modal
-            title="Basic Modal"
-            visible={isModalVisible}
-            onOk={handleOk}
-            onCancel={handleCancel}
-          >
+
+          <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} footer={null}>
+
             <Login setIsModalVisible={setIsModalVisible} />
           </Modal>
 

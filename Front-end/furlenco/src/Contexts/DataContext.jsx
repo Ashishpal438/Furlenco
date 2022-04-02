@@ -92,16 +92,12 @@ export const DataContextProvider = ({ children }) => {
         description: "@FURLENCO Got it! Thanks for the on-time delivery and excellent work by the Furlenco team.",
     },
     {
-        image: "https://assets.furlenco.com/f_auto,q_auto,dpr_auto/s3-furlenco-images/ugc/production/1607694091636.png",
-        name: "Vishal Agarwal",
-        location: "Bengaluru",
-        description: "@FURLENCO quick delivery and assembly of the products.... impressed by the service and products!",
-    },
-    {
         image: "https://assets.furlenco.com/f_auto,q_auto,dpr_auto/s3-furlenco-images/ugc/production/1607693885377.png",
         name: "Safal Singh",
         location: "Bengaluru",
         description: "Good Services, On time delivery, professionalism quality products",
+        via: "Facebook",
+        viaImg: "https://assets.furlenco.com/s3-furlenco-images/thorin/testimony/social-icons/facebook_icon.svg",
     },
     {
         image: "https://assets.furlenco.com/f_auto,q_auto,dpr_auto/s3-furlenco-images/ugc/production/1607692876921.png",
@@ -110,13 +106,6 @@ export const DataContextProvider = ({ children }) => {
         description: "Thank you @Furlenco for your great service and still going strong #furlenco ....read more",
         via: "Twitter",
         viaImg: "https://assets.furlenco.com/s3-furlenco-images/thorin/testimony/social-icons/twitter_icon.svg",
-    }, {
-        image: "https://assets.furlenco.com/f_auto,q_auto,dpr_auto/s3-furlenco-images/ugc/production/1607694091636.png",
-        name: "Harjeet singh",
-        location: "Bengaluru",
-        description: "Hey furlenco good job , although this is not the first time you have impressed me. My entire house i... read more",
-        via: "Facebook",
-        viaImg: "https://assets.furlenco.com/s3-furlenco-images/thorin/testimony/social-icons/facebook_icon.svg",
     }
     ]
 
