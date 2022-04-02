@@ -13,12 +13,27 @@
 }
 .login_btn{
    padding: 8px;
-   width: 15%;
+   width: 25%;
    color: #ffff;
    font-weight: bold;
    font-size: 20px;
    background-color: rgb(19, 19, 109);
    border-radius: 20px;
    border: none;
+   cursor: pointer;
+   margin-bottom: 10px;
+}
+
+.Login_btn_page{
+   border: 2px solid blue;
+   padding: 10px;
+   border-radius: 5px;
+   background-color: #ffff;
+   color: blue;
+}
+.login_page_box{
+   text-align: center;
+   padding: 0px;
+   font-size: medium;
 }
 

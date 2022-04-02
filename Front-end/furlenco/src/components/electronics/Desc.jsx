@@ -17,7 +17,7 @@ export const Desc = () => {
     <div className={styles.container}>
       <div>
         <div className={styles.rightDiv}>
-          <img className={styles.display_img} src={ob.display} />
+          <img className={styles.display_img} src={ob.display} alt='display' />
           <div className={styles.devide}>
             <div>
               <div className={styles.name_}>{ob.name}</div>
@@ -27,7 +27,7 @@ export const Desc = () => {
               </div>
               <div className={styles.name__}>PACKAGE CONTENTS</div>
               <div>
-                <img src={ob.basic_item} className={styles.boxImage} />
+                <img src={ob.basic_item} className={styles.boxImage} alt='display' />
               </div>
             </div>
             <div>

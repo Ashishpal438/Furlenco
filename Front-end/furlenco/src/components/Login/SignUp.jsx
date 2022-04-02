@@ -18,7 +18,7 @@ function SignUp({ setIsModalVisible2 }) {
       email: email,
       password: password
     };
-    fetch("http://localhost:8000/signup", {
+    fetch("http://localhost:9000/signup", {
       method: "POST",
       body: JSON.stringify(_data),
       headers: { "Content-type": "application/json; charset=UTF-8" },
@@ -28,7 +28,7 @@ function SignUp({ setIsModalVisible2 }) {
       .catch((err) => console.log(err));
   }
   return (
-    <div>
+    <div  className={styled.login_page_box}>
       <p>Login using</p>
       <div className={styled.login_with_fb}>
         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png' alt='fb_login' />
@@ -78,7 +78,6 @@ function SignUp({ setIsModalVisible2 }) {
         }}
       />
       <p>Already Registered?</p>
-      {/* <Link to=''>Login</Link> */}
     </div>
   )
 }

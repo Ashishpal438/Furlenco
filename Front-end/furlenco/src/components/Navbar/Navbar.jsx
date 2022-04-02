@@ -72,6 +72,7 @@ export const Navbar = () => {
               src="https://assets.furlenco.com/s3-furlenco-images/lenco-icons/static-icons/ic_offer_rounded.svg"
               alt="img"
             />
+            
           </div>
           <div className={styles.nav_item} onClick={showModal}>
             <img
