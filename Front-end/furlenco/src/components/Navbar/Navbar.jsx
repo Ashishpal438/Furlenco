@@ -3,9 +3,37 @@ import SearchIcon from "@mui/icons-material/Search";
 import styles from "./Navbar.module.css";
 import cx from "classnames";
 import { useNavigate } from "react-router-dom";
+import { Modal } from 'antd';
+import Login from "../Login/Login";
 
 export const Navbar = () => {
   const navigate = useNavigate();
+
+  const [cart, setCart] = useState([]);
+  useEffect(() => {
+    fetch(`http://localhost:8000/cart`)
+      .then((r) => r.json())
+      .then((d) => setCart([...d]))
+      .catch((e) => console.log(e));
+  }, []);
+
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
+
+
 
   return (
     <>
@@ -45,12 +73,17 @@ export const Navbar = () => {
               alt="img"
             />
           </div>
-          <div className={styles.nav_item}>
+          <div className={styles.nav_item} onClick={showModal}>
             <img
               src="	https://assets.furlenco.com/s3-furlenco-images/lenco-icons/static-icons/ic_user_circle.svg"
               alt="img"
             />
           </div>
+
+          {/* modal */}
+          <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+            <Login setIsModalVisible={setIsModalVisible} />
+          </Modal>
 
           <div
             className={styles.nav_item}
@@ -62,9 +95,15 @@ export const Navbar = () => {
               src="https://assets.furlenco.com/s3-furlenco-images/desktop_web/hulk/icons/ic-cart.svg"
               alt="img"
             />
+
             {/* {cart[0].items.length != 0 && (
               <div className={styles.cartNumber}>{cart[0].items.length}</div>
             )} */}
+
+            {cart.length !== 0 && (
+              <div className={styles.cartNumber}>{cart.length}</div>
+            )}
+
           </div>
 
           <div className={cx(styles.nav_item, styles.location)}>
