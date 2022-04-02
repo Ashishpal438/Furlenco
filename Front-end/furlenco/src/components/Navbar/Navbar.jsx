@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import styles from "./Navbar.module.css";
 import cx from "classnames";
@@ -6,13 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
   const navigate = useNavigate();
-  const [cart, setCart] = useState([]);
-  useEffect(() => {
-    fetch(`http://localhost:8000/cart`)
-      .then((r) => r.json())
-      .then((d) => setCart([...d]))
-      .catch((e) => console.log(e));
-  }, []);
+
   return (
     <>
       <div className={styles.offers}>
@@ -68,9 +62,9 @@ export const Navbar = () => {
               src="https://assets.furlenco.com/s3-furlenco-images/desktop_web/hulk/icons/ic-cart.svg"
               alt="img"
             />
-            {cart.length != 0 && (
-              <div className={styles.cartNumber}>{cart.length}</div>
-            )}
+            {/* {cart[0].items.length != 0 && (
+              <div className={styles.cartNumber}>{cart[0].items.length}</div>
+            )} */}
           </div>
 
           <div className={cx(styles.nav_item, styles.location)}>
