@@ -2,7 +2,7 @@ import { cartActions } from "./cart-slice";
 export const fetchCartData = () => {
   return async (dispatch) => {
     const fetchData = async () => {
-      const response = await fetch(`http://localhost:8000/cart`, {
+      const response = await fetch(`https://furlenco-backend.herokuapp.com/cart`, {
         method: "GET",
         headers: {
           "content-type": "application/json;charset=UTF-8",
@@ -22,7 +22,7 @@ export const fetchCartData = () => {
 export const sendCartData = (cart) => {
   return async (dispatch) => {
     const sendRequest = async () => {
-      const response = await fetch(`http://localhost:8000/cart/1`, {
+      const response = await fetch(`https://furlenco-backend.herokuapp.com/cart/1`, {
         method: "PUT",
         body: JSON.stringify(cart),
         headers: {
