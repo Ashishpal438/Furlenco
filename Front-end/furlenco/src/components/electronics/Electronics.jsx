@@ -7,7 +7,7 @@ export function Electronics() {
   const [data, setdata] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/items`)
+    fetch(`https://furlenco-backend.herokuapp.com/items`)
       .then((r) => r.json())
       .then((d) => setdata([...d]))
       .catch((e) => console.log(e));
