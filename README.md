@@ -1,4 +1,13 @@
-# Teach Stack Use: MERN
+## Technology Stack Used
+- React.js
+- Redux, ContextAPI
+- Node.js
+- MongoDB
+- Express
+- Ant Design
+- CSS
+- HTML
+- Javascript
 # Furlenco
 ![a1](https://user-images.githubusercontent.com/87033076/161962237-581e9947-8195-4c50-8e53-1b17bc232d73.png)
 ![a2](https://user-images.githubusercontent.com/87033076/161962253-1ad2efa0-d41c-4ae7-baff-ca95d8aa4f19.png)
